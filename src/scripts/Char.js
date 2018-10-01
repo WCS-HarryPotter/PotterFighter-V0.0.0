@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 
 class Char extends Component {
   constructor(props){
@@ -12,13 +12,13 @@ class Char extends Component {
 
 
 
-    this.house=props.house,
+    /*this.house=props.house,
     this.name=props.name,
     this.healthPoints=props.health ? props.health : 100,
     this.shoot=props.shoot ? props.shoot : true,
     this.defend=props.defend ? props.defend : 3,
     this.isDefenseActive=props.isDefenseActive ? props.isDefenseActive : false,
-    this.housePoints=props.housePoints ? props.housePoints : 0
+    this.housePoints=props.housePoints ? props.housePoints : 0*/
   }
 }
 /*

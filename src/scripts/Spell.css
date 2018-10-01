@@ -3,19 +3,16 @@
   width: 20px;
   border-radius: 50%;
   background-color: black;
-  position: absolute;
-  top: 100px;
-  left: 100px;
 }
-#serpentard{
+#slytherin{
   background-color: green;
 }
-#gryffondor{
+#gryffindor{
   background-color: red;
 }
-#poufsouffle{
+#hufflepuff{
   background-color: yellow;
 }
-#serdaigle{
+#ravenclaw{
   background-color: rgb(96, 96, 199);
 }
