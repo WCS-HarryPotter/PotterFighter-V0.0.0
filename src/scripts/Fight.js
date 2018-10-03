@@ -53,7 +53,6 @@ class Fight extends Component {
     }
 
     render() {
-
         return (
             <div>
                 <div>
