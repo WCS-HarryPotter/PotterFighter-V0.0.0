@@ -6,35 +6,27 @@ class Spell extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      leftSpell: 0,
-      topSpell: 0,
+      leftSpell: 250,
+      topSpell: 75,
+      heightSpell: 20,
+      widthSpell: 20,
+      ref:this.props.spellRef+"spell",
     }
   }
 
-  componentWillMount(){
-    this.setState({
-      leftSpell:250+"px",
-      topSpell:75+"px",
-    })
-  }
-
-  componentDidMount(){
-    console.log(this.state.leftSpell)
-    this.returnPosition();
-  }
-
-  returnPosition(){
-    this.props.callBack(this.state.leftSpell);
-  }
-  
   render() {
     let spellStyle={
       position: "absolute",
-      top: this.state.topSpell,
-      left: this.state.leftSpell
+      top: this.state.topSpell+"px",
+      left: this.state.leftSpell+"px",
+      width: this.state.widthSpell+"px",
+      height: this.state.heightSpell+"px",
     }
+
+    let spellId="spell"+this.props.house
+    
     return (
-      <div className="spell" id={this.props.house} ref={"spell"} style={spellStyle}>
+      <div className="spell" id={spellId} style={spellStyle}>
       </div>
     );
   }
